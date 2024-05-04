@@ -1,6 +1,6 @@
 {
   "name": "eslint-formatter-lint-diff-line-formatter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "custom formatter for lint-diff-line",
   "source": "./index.js",
   "main": "./dist/index.js",
