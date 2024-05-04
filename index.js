@@ -130,7 +130,10 @@ const getOutput = results => {
   }
 
   return {
-    ...newLineResultOutput,
+		errorCount: newLineResultOutput.errorCount || existingResultOutput.errorCount || 0,
+    warningCount: newLineResultOutput.warningCount || existingResultOutput.warningCount || 0,
+    fixableErrorCount: newLineResultOutput.fixableErrorCount || existingResultOutput.fixableErrorCount || 0,
+    fixableWarningCount: newLineResultOutput.fixableWarningCount || existingResultOutput.fixableWarningCount || 0,
     summaryColor:
       existingResultOutput.summaryColor === 'red' ||
       newLineResultOutput.summaryColor === 'red'
