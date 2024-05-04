@@ -1,0 +1,1 @@
+# eslint-formatter-lint-diff-line-formatter
