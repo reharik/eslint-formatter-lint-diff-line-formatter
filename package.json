@@ -1,0 +1,28 @@
+{
+  "name": "eslint-formatter-lint-diff-line-formatter",
+  "version": "1.0.0",
+  "description": "custom formatter for lint-diff-line",
+  "source": "./index.js",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && parcel build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reharik/eslint-formatter-lint-diff-line-formatter.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-formatter",
+    "eslintformatter"
+  ],
+  "author": "Raif Harik",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "parcel": "^2.12.0",
+    "strip-ansi": "^6.0.1",
+    "text-table": "^0.2.0"
+  }
+}
