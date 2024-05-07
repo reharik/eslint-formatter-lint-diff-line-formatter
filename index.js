@@ -121,7 +121,7 @@ const getOutput = results => {
     : '';
   const newLine = newLineResultOutput.output
     ? `\n --------------------------------- \n NEW Lint Errors \n ---------------------------------\n${newLineResultOutput.output}\n\n`
-    : '';
+    : `\n --------------------------------- \n No NEW Lint Errors! Nice. \n ---------------------------------\n\n`;
 
   if (formatterVersion === 'fullFile') {
     finalOutput = `${existing}${newLine}`;
