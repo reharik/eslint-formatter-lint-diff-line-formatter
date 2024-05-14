@@ -45,7 +45,7 @@ const buildResult = results => {
     fixableErrorCount += result.fixableErrorCount;
     fixableWarningCount += result.fixableWarningCount;
 
-    output += `${chalk.underline(result.filePath)}\n`;
+    output += `\n\n${chalk.underline(result.filePath)}\n`;
 
     output += `${table(
       messages.map(message => {
@@ -117,10 +117,10 @@ const getOutput = results => {
   const existingResultOutput = buildResult(existingResults);
   let finalOutput;
   const existing = existingResultOutput.output
-    ? `\n --------------------------------- \n Existing Lint Errors \n ---------------------------------\n${existingResultOutput.output} \n\n`
+    ? `\n --------------------------------- \n Existing Lint Errors \n ---------------------------------${existingResultOutput.output} \n\n`
     : '';
   const newLine = newLineResultOutput.output
-    ? `\n --------------------------------- \n NEW Lint Errors \n ---------------------------------\n${newLineResultOutput.output}\n\n`
+    ? `\n --------------------------------- \n NEW Lint Errors \n ---------------------------------${newLineResultOutput.output}\n\n`
     : `\n --------------------------------- \n No NEW Lint Errors! Nice. \n ---------------------------------\n\n`;
 
   if (formatterVersion === 'fullFile') {
